@@ -6,4 +6,5 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - run: date
+      - uses: actions/checkout@v3
+      - run: test -f text1
