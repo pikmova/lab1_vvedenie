@@ -11,4 +11,4 @@ jobs:
         run: |
           test -f text1
           test -f text2
-          test -f .github/
+          test -d .github/
