@@ -1,4 +1,4 @@
-name: CI Test
+name: CI
 on:
   push:
   pull_request:
@@ -7,4 +7,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - run: test -f text1
+      - name: General project check
+        run: |
+          test -f text1
+          test -f text2
+          test -f .github/
